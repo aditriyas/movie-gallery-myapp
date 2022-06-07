@@ -144,7 +144,7 @@ export default {
   methods: {
     async getMovies() {
       const data = axios.get(
-        `${process.env.BASE_URL}/3/movie/now_playing?api_key=${process.env.APP_KEY}&language=en-US&page=1`
+        `https://api.themoviedb.org/3/movie/now_playing?api_key=e413576a21e5c9e2edb32082a22bc79d&language=en-US&page=1`
       )
       const result = await data
       result.data.results.forEach((movie) => {
